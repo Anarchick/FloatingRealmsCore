@@ -4,13 +4,14 @@ import fr.anarchick.anapi.bukkit.BukkitUtils;
 import fr.anarchick.anapi.bukkit.inventory.ItemBuilder;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.awt.*;
 
-public class GrapplingHook extends AbstractCustomItem {
+public class GrapplingHook extends AbstractCustomItem implements Listener {
 
 	public static final String ID = "GrapplingHook";
 	private static final ItemStack ITEM;
