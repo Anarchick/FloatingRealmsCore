@@ -2,4 +2,4 @@ name: FloatingRealmsCore
 version: '${version}'
 main: fr.anarchick.frc.FloatingRealmsCore
 api-version: '1.20'
-depend: [Anapi, ProtocolLib]
+depend: [Anapi, CanI, ProtocolLib]

@@ -54,6 +54,7 @@ public class BoomStick extends AbstractCustomItem {
 	public void onLeftClick(PlayerInteractEvent event) {
 		final Player player = event.getPlayer();
 		consume(player.getInventory(), new ItemStack(Material.DIAMOND_HELMET), 1);
+
 		if (!event.isCancelled()
 				&& player.getInventory().containsAtLeast(new ItemStack(Material.GUNPOWDER), 1)) {
 			event.setCancelled(true);
