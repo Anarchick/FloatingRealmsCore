@@ -20,12 +20,15 @@ repositories {
         url = "https://oss.sonatype.org/content/groups/public/"
     }
     maven { url "https://repo.dmulloy2.net/repository/public/" } // ProtocolLib
+    maven { url "https://jitpack.io" } // Github repositories
 }
 
 dependencies {
     implementation 'org.jetbrains:annotations:20.1.0'
     compileOnly group: 'io.papermc.paper', name: 'paper-api', version: mcVersion + mcSubVersion + '-R0.1-SNAPSHOT'
     compileOnly group: "com.comphenix.protocol", name: "ProtocolLib", version: protocolLibVersion
+    implementation 'com.github.Anarchick:CanI:main-SNAPSHOT'
+    //implementation 'com.github.Anarchick:Anapi:main-SNAPSHOT'
     compileOnly fileTree(include: ['*.jar'], dir: 'libs')
 }
 
