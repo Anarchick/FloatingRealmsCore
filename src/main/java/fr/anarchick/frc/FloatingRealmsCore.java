@@ -47,6 +47,7 @@ public final class FloatingRealmsCore extends JavaPlugin {
         new HorseHorn();
         Xray.init();
         new BoomStick();
+        new GrapplingHook();
 
         info(sender, "<green>FloatingRealmsCore has been reloaded");
     }
